@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>EuroleagueMock</servlet-name>
+		<servlet-class>ch.modeso.euroleague.EuroleagueMockServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EuroleagueMock</servlet-name>
+		<url-pattern>/euroleaguemock/bad</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EuroleagueMock2</servlet-name>
+		<servlet-class>ch.modeso.euroleague.EuroleagueMockServlet2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EuroleagueMock2</servlet-name>
+		<url-pattern>/euroleaguemock/good</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EuroleagueMock3</servlet-name>
+		<servlet-class>ch.modeso.euroleague.EuroleagueMockServlet3</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EuroleagueMock3</servlet-name>
+		<url-pattern>/euroleaguemock/livescore</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EuroleagueMock4</servlet-name>
+		<servlet-class>ch.modeso.euroleague.EuroleagueMockServlet4</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EuroleagueMock4</servlet-name>
+		<url-pattern>/euroleaguemock/livescore/multi</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EuroleagueMockMG</servlet-name>
+		<servlet-class>ch.modeso.euroleague.EuroleagueMockServletMultiGood</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EuroleagueMockMG</servlet-name>
+		<url-pattern>/euroleaguemock/multi/good</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EuroleagueMockMB</servlet-name>
+		<servlet-class>ch.modeso.euroleague.EuroleagueMockServletMultiBad</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EuroleagueMockMB</servlet-name>
+		<url-pattern>/euroleaguemock/multi/bad</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
